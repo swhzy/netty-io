@@ -39,6 +39,24 @@ public class BioClientSocket {
 
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            if(pw!=null){
+                pw.close();
+            }
+            if(in!=null){
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if(socket!=null){
+                try {
+                    socket.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }

@@ -27,7 +27,6 @@ public class BioServerHandler implements Runnable{
         }
         BufferedReader in = null;
         PrintWriter pw = null;
-        ByteInputStream bs = null;
         try {
             InputStream inputStream = socket.getInputStream();
 //            byte[] bytes = new byte[1024];

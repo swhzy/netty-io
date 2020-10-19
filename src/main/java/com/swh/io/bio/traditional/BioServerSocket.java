@@ -1,4 +1,6 @@
-package com.swh.io.bio;
+package com.swh.io.bio.traditional;
+
+import com.swh.io.bio.BioServerHandler;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -9,7 +11,7 @@ import java.net.Socket;
  * FileName: BioServerSocket
  * Author:   songweihui
  * Date:     2020/10/16 16:56
- * Description: bio 服务端
+ * Description: bio 服务端   客户端线程请求数和服务器线程处理数 1:1
  */
 public class BioServerSocket {
 
